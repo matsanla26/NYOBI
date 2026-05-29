@@ -1,437 +1,254 @@
-```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Pengumuman Kelulusan MTsN 5 Kebumen</title>
-
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
-}
-
-body{
-    min-height:100vh;
-    background:
-    linear-gradient(
-        rgba(15,81,50,0.75),
-        rgba(25,135,84,0.75)
-    ),
-    url('sekolah.jpg');
-
-    background-size:cover;
-    background-position:center;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    padding:20px;
-}
-
-.container{
-    width:100%;
-    max-width:500px;
-
-    background:white;
-
-    border-radius:25px;
-
-    padding:40px;
-
-    box-shadow:0 10px 30px rgba(0,0,0,0.3);
-}
-
-.logo{
-    width:100px;
-
-    display:block;
-
-    margin:auto;
-    margin-bottom:20px;
-}
-
-h1{
-    text-align:center;
-    color:#0f5132;
-
-    margin-bottom:10px;
-
-    font-size:40px;
-}
-
-h2{
-    text-align:center;
-
-    color:#333;
-
-    margin-bottom:8px;
-}
-
-h3{
-    text-align:center;
-
-    color:#666;
-
-    margin-bottom:25px;
-}
-
-.info{
-    background:#e9f7ef;
-
-    border-left:5px solid #198754;
-
-    padding:18px;
-
-    border-radius:12px;
-
-    margin-bottom:25px;
-
-    color:#0f5132;
-
-    line-height:1.6;
-}
-
-#countdown{
-    font-size:28px;
-    font-weight:bold;
-    text-align:center;
-
-    margin-top:10px;
-}
-
-label{
-    display:block;
-
-    margin-bottom:10px;
-
-    font-weight:bold;
-
-    color:#333;
-}
-
-.input-group{
-    display:flex;
-}
-
-input{
-    flex:1;
-
-    padding:15px;
-
-    border:1px solid #ccc;
-
-    border-radius:12px 0 0 12px;
-
-    font-size:16px;
-}
-
-button{
-    padding:15px 25px;
-
-    border:none;
-
-    background:#198754;
-
-    color:white;
-
-    font-size:16px;
-
-    font-weight:bold;
-
-    border-radius:0 12px 12px 0;
-
-    cursor:pointer;
-
-    transition:0.3s;
-}
-
-button:hover{
-    background:#146c43;
-}
-
-.result{
-    margin-top:25px;
-
-    background:#f8f9fa;
-
-    padding:20px;
-
-    border-radius:15px;
-
-    display:none;
-}
-
-.status{
-    margin-top:20px;
-
-    background:#198754;
-
-    color:white;
-
-    text-align:center;
-
-    padding:12px;
-
-    border-radius:10px;
-
-    font-size:22px;
-
-    font-weight:bold;
-}
-
-footer{
-    text-align:center;
-
-    margin-top:30px;
-
-    color:#666;
-
-    font-size:14px;
-}
-
-@media(max-width:600px){
-
-    .container{
-        padding:25px;
-    }
-
-    h1{
-        font-size:30px;
-    }
-
-}
-
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengumuman Kelulusan MTsN 5 Kebumen</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial,sans-serif;
+        }
+
+        body{
+            min-height:100vh;
+            background: linear-gradient(rgba(15,81,50,0.75), rgba(25,135,84,0.75)), url('sekolah.jpg');
+            background-size:cover;
+            background-position:center;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:20px;
+        }
+
+        .container{
+            width:100%;
+            max-width:500px;
+            background:white;
+            border-radius:25px;
+            padding:40px;
+            box-shadow:0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .logo{
+            width:100px;
+            display:block;
+            margin:auto;
+            margin-bottom:20px;
+        }
+
+        h1{
+            text-align:center;
+            color:#0f5132;
+            margin-bottom:10px;
+            font-size:40px;
+        }
+
+        h2{
+            text-align:center;
+            color:#333;
+            margin-bottom:8px;
+        }
+
+        h3{
+            text-align:center;
+            color:#666;
+            margin-bottom:25px;
+        }
+
+        .info{
+            background:#e9f7ef;
+            border-left:5px solid #198754;
+            padding:18px;
+            border-radius:12px;
+            margin-bottom:25px;
+            color:#0f5132;
+            line-height:1.6;
+        }
+
+        #countdown{
+            font-size:28px;
+            font-weight:bold;
+            text-align:center;
+            margin-top:10px;
+        }
+
+        label{
+            display:block;
+            margin-bottom:10px;
+            font-weight:bold;
+            color:#333;
+        }
+
+        .input-group{
+            display:flex;
+        }
+
+        input{
+            flex:1;
+            padding:15px;
+            border:1px solid #ccc;
+            border-radius:12px 0 0 12px;
+            font-size:16px;
+        }
+
+        button{
+            padding:15px 25px;
+            border:none;
+            background:#198754;
+            color:white;
+            font-size:16px;
+            font-weight:bold;
+            border-radius:0 12px 12px 0;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        button:hover{
+            background:#146c43;
+        }
+
+        .result{
+            margin-top:25px;
+            background:#f8f9fa;
+            padding:20px;
+            border-radius:15px;
+            display:none;
+        }
+
+        .status{
+            margin-top:20px;
+            background:#198754;
+            color:white;
+            text-align:center;
+            padding:12px;
+            border-radius:10px;
+            font-size:22px;
+            font-weight:bold;
+        }
+
+        footer{
+            text-align:center;
+            margin-top:30px;
+            color:#666;
+            font-size:14px;
+        }
+
+        @media(max-width:600px){
+            .container{ padding:25px; }
+            h1{ font-size:30px; }
+        }
+    </style>
 </head>
-
 <body>
 
 <div class="container">
+    <img src="logo.png" class="logo" alt="Logo Sekolah">
+    <h1>Pengumuman Kelulusan</h1>
+    <h2>MTsN 5 Kebumen</h2>
+    <h3>Tahun Ajaran 2025/2026</h3>
 
-<img
-src="logo.png"
-class="logo"
->
+    <div id="countdownBox" class="info">
+        <b>Pengumuman Dibuka Dalam:</b>
+        <div id="countdown">Loading...</div>
+    </div>
 
-<h1>Pengumuman Kelulusan</h1>
+    <div id="content" style="display:none;">
+        <div class="info">
+            Silakan masukkan NISN untuk melihat hasil kelulusan siswa.
+        </div>
 
-<h2>MTsN 5 Kebumen</h2>
+        <label for="nisn">NISN</label>
+        <div class="input-group">
+            <input type="text" id="nisn" placeholder="Contoh: 3103902712">
+            <button onclick="cekKelulusan()">Cek</button>
+        </div>
 
-<h3>Tahun Ajaran 2025/2026</h3>
+        <div class="result" id="hasil"></div>
+    </div>
 
-
-<!-- COUNTDOWN -->
-
-<div id="countdownBox" class="info">
-
-<b>Pengumuman Dibuka Dalam:</b>
-
-<div id="countdown">
-Loading...
-</div>
-
-</div>
-
-
-<!-- CONTENT -->
-
-<div id="content" style="display:none;">
-
-<div class="info">
-Silakan masukkan NISN untuk melihat hasil kelulusan siswa.
-</div>
-
-<label>NISN</label>
-
-<div class="input-group">
-
-<input
-type="text"
-id="nisn"
-placeholder="Contoh: 3103902712"
->
-
-<button onclick="cekKelulusan()">
-Cek
-</button>
-
-</div>
-
-<div class="result" id="hasil"></div>
-
-</div>
-
-<footer>
-© 2026 MTsN 5 Kebumen
-</footer>
-
+    <footer>
+        © 2026 MTsN 5 Kebumen
+    </footer>
 </div>
 
 <script>
+    // ================= COUNTDOWN =================
+    const targetDate = new Date("May 28, 2026 21:00:00").getTime();
 
-// ================= COUNTDOWN =================
+    const countdown = setInterval(function(){
+        const now = new Date().getTime();
+        const distance = targetDate - now;
 
-const targetDate = new Date(
-"May 28, 2026 21:00:00"
-).getTime();
+        const days = Math.floor(distance / (1000*60*60*24));
+        const hours = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
+        const minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
+        const seconds = Math.floor((distance % (1000*60)) / 1000);
 
-const countdown = setInterval(function(){
+        document.getElementById("countdown").innerHTML = 
+            days + " Hari " + hours + " Jam " + minutes + " Menit " + seconds + " Detik";
 
-const now = new Date().getTime();
+        // Jika countdown selesai
+        if(distance < 0){
+            clearInterval(countdown);
+            document.getElementById("countdownBox").style.display = "none";
+            document.getElementById("content").style.display = "block";
+        }
+    }, 1000);
 
-const distance = targetDate - now;
+    // ================= DATA SISWA DARI EXCEL =================
+    // Anda bisa menyalin hasil konversi Excel ke JSON di dalam array ini
+    const siswa = [
+        { "nisn": "3103902712", "nama": "ADNAN MAULANA", "status": "LULUS" },
+        { "nisn": "3108132742", "nama": "AHMAD DANI ARDIAN NOVIANTO", "status": "LULUS" },
+        { "nisn": "3112699133", "nama": "AHMAD KUROTUL UYUN", "status": "LULUS" }
+        // Tempelkan data tambahan di sini...
+    ];
 
-const days = Math.floor(
-distance / (1000*60*60*24)
-);
+    // Fitur tambahan: Tekan Enter untuk cek kelulusan
+    document.getElementById("nisn").addEventListener("keyup", function(event) {
+        if (event.key === "Enter") {
+            cekKelulusan();
+        }
+    });
 
-const hours = Math.floor(
-(distance % (1000*60*60*24))
-/ (1000*60*60)
-);
+    // ================= CEK KELULUSAN =================
+    function cekKelulusan(){
+        const nisnInput = document.getElementById("nisn").value.trim();
+        const hasilBox = document.getElementById("hasil");
 
-const minutes = Math.floor(
-(distance % (1000*60*60))
-/ (1000*60)
-);
+        if(nisnInput === "") {
+            alert("Silakan masukkan NISN terlebih dahulu!");
+            return;
+        }
 
-const seconds = Math.floor(
-(distance % (1000*60))
-/ 1000
-);
+        const data = siswa.find(s => s.nisn === nisnInput);
 
-document.getElementById("countdown").innerHTML =
-days + " Hari " +
-hours + " Jam " +
-minutes + " Menit " +
-seconds + " Detik";
-
-
-// jika countdown selesai
-
-if(distance < 0){
-
-clearInterval(countdown);
-
-document.getElementById(
-"countdownBox"
-).style.display = "none";
-
-document.getElementById(
-"content"
-).style.display = "block";
-
-}
-
-},1000);
-
-
-// ================= DATA SISWA =================
-
-const siswa = [
-
-{
-nisn:"3103902712",
-nama:"ADNAN MAULANA"
-},
-
-{
-nisn:"3108132742",
-nama:"AHMAD DANI ARDIAN NOVIANTO"
-},
-
-{
-nisn:"3112699133",
-nama:"AHMAD KUROTUL UYUN"
-}
-
-];
-
-
-// ================= CEK KELULUSAN =================
-
-function cekKelulusan(){
-
-const nisn = document
-.getElementById("nisn")
-.value
-.trim();
-
-const hasil = document
-.getElementById("hasil");
-
-const data = siswa.find(
-s => s.nisn === nisn
-);
-
-
-// jika ditemukan
-
-if(data){
-
-hasil.style.display = "block";
-
-hasil.innerHTML = `
-
-<h2 style="text-align:center;color:#0f5132;">
-HASIL KELULUSAN
-</h2>
-
-<br>
-
-<p>
-<b>Nama :</b>
-${data.nama}
-</p>
-
-<br>
-
-<p>
-<b>NISN :</b>
-${data.nisn}
-</p>
-
-<div class="status">
-LULUS
-</div>
-
-`;
-
-}
-
-
-// jika tidak ditemukan
-
-else{
-
-hasil.style.display = "block";
-
-hasil.innerHTML = `
-
-<div
-class="status"
-style="background:#dc3545;"
->
-Data Tidak Ditemukan Hubungi Admin 
-</div>
-
-`;
-
-}
-
-}
-
+        // Jika ditemukan
+        if(data){
+            hasilBox.style.display = "block";
+            hasilBox.innerHTML = `
+                <h2 style="text-align:center; color:#0f5132; margin-bottom: 15px;">
+                    HASIL KELULUSAN
+                </h2>
+                <p><b>Nama :</b> ${data.nama}</p>
+                <p style="margin-top: 5px;"><b>NISN :</b> ${data.nisn}</p>
+                <div class="status">${data.status ? data.status.toUpperCase() : 'LULUS'}</div>
+            `;
+        } 
+        // Jika tidak ditemukan
+        else {
+            hasilBox.style.display = "block";
+            hasilBox.innerHTML = `
+                <div class="status" style="background:#dc3545;">
+                    Data Tidak Ditemukan. Hubungi Admin!
+                </div>
+            `;
+        }
+    }
 </script>
 
 </body>
 </html>
-```
